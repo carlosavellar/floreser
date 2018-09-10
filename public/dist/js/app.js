@@ -1,0 +1,2 @@
+"use strict";console.log("Flor");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiYUFBQUEsUUFBUUMsSUFBSSIsImZpbGUiOiJhcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnRmxvcicpOyJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
