@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <title>Title</title>
@@ -22,7 +22,7 @@
         </button>
         <div class="collapse navbar-collapse text-center center" id="navbarCollapse">
           <ul class="nav navbar-nav text-center center">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Sobre nós <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -55,6 +55,7 @@
   </section>
   <section id="countdown">
     <div class="container text-center">
+      <div id="thetime">The time</div>
       <div class="row">
         <div class="col-sm">
           <h2 class="text-left">Participe</h2>
@@ -62,27 +63,27 @@
       </div>
       <div class="row">
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2>09</h2>
+          <h2>00</h2>
+          <p>Dias</p>
+          <p>Ico</p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h2 class="dias">00</h2>
           <p>Dias</p>
           <p>Ico</p>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">
           <h2>09</h2>
-          <p>Dias</p>
+          <p class="horas">Horas</p>
           <p>Ico</p>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2>09</h2>
-          <p>Horas</p>
-          <p>Ico</p>
-        </div>
-        <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2>09</h2>
+          <h2 class="minutos">00</h2>
           <p>Minutos</p>
           <p>Ico</p>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2>09</h2>
+          <h2 id="segundos">00</h2>
           <p>Segudos</p>
           <p>Ico</p>
         </div>
@@ -116,7 +117,7 @@
               </div>
               <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                       <div class="card-body">
                         <h5 class="card-title">Dê carona</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -210,7 +211,7 @@
               </div>
               <div class="col-sm-12 col-md-5 col-lg-5">
                   <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -254,8 +255,8 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./dist/util/jquery/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="./dist/js/app.js"></script>
+  <script src="./dist/util/jquery/jquery-3.3.1.slim.min.js"></script>
   <script src="./dist/util/bootstrap/popper.min.js"></script>
   <script src="./dist/util/bootstrap/bootstrap.min.js"></script>
   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
