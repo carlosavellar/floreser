@@ -1,5 +1,5 @@
-var countDate = new Date("Dec, 01, 2018, 19:00:00").getTime();
-var numDias, numHoras, numMin, numSeg;
+let countDate = new Date("March, 02, 2019, 19:00:00").getTime();
+let numDias, numHoras, numMin, numSeg, distance;
 
 const formtDigits = (val) =>{  
    if(val < 10){
@@ -9,9 +9,11 @@ const formtDigits = (val) =>{
 };
 
 const updateClock = ()=>{
-    var now = new Date().getTime();
-    var distance = countDate - now;
-
+    let now = new Date().getTime();
+    distance = countDate - now;
+    // let numMes = new Date().getMonth();
+    console.log( numMes - 6 );
+    let numMes = Math.floor();
     let numDias = Math.floor(distance / (1000 * 60 * 60 * 24));
     let numHoras = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let numMin = Math.floor((distance % (1000 * 60 * 60)) / ((1000 * 60)));
@@ -21,13 +23,13 @@ const updateClock = ()=>{
         document.querySelector('.horas').innerHTML = formtDigits(numHoras);
         document.querySelector('.minutos').innerHTML = formtDigits(numMin);
         document.querySelector('.segundos').innerHTML = formtDigits(numSeg);
+        
 };
 
 setInterval(updateClock, 1000);
 updateClock();
 
-  if (distance < 0 ){
-    clearInterval(timer);
-    console.log('___setInterval cleared');
- }
-
+if(distance < 0){
+    clearInterval(updateClock) 
+    console.log('___setInterval cleared-');
+}
