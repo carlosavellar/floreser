@@ -53,12 +53,5 @@ document.addEventListener("scroll", () => {
 
 console.log('Total love');
 // Load 1
-for(let i=0;i<10;i++){
-    console.log("Do something");
-}
-document.addEventListener("DOMContentLoaded", ()=>{
-    setTimeout(()=>{
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("wrapper").style.visibility= "initial";
-    },110000);
-}, false);
+
+
