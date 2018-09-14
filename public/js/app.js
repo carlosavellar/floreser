@@ -43,3 +43,12 @@ document.getElementById("closeBot").addEventListener('click', ()=>{
 
 });
 fullVideo.controls = true;
+
+document.addEventListener("scroll", ()=>{
+        if(window.scrollY > 500){
+            console.log("Maior que 100");
+            myVideo.pause();
+        }else{
+            myVideo.play();
+        }
+});
