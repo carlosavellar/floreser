@@ -1,6 +1,7 @@
 #video {
   background: #333;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 674px; }
 
 #myVideo {
   max-width: 300%;

@@ -29,11 +29,12 @@ if(distance < 0){
     console.log('___setInterval cleared-');
 }
 
-// Video Control
-const btnPlay =  document.getElementById("playBtn");
-const myVideo =  document.getElementById("myVideo");
-var btnClose = document.getElementById("closeBot");
 
+//// VIDEO 
+const btnPlay =  document.getElementById("playBtn");
+const fullVideo = document.getElementById("myVideo-full");
+const myVideo =  document.getElementById("myVideo");
+const btnClose = document.getElementById("closeBot");
 btnPlay.addEventListener('click',()=>{
      myVideo.pause();
 });
@@ -41,3 +42,4 @@ document.getElementById("closeBot").addEventListener('click', ()=>{
     myVideo.play();
 
 });
+fullVideo.controls = true;
