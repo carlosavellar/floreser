@@ -10,8 +10,8 @@ const watch = require('gulp-watch');
 const DIST = "./public/dist";
 const HTML_SOURCE = "./public/**/*.html";
 const SCRIPT_SOURCE = "./public/js/**/*.js";
-const CSS_SOURCE = "./public/**/*.css";
-const SASS_SOURCE = "./public/**/*.scss";
+// const CSS_SOURCE = "./public/**/*.css";
+const SASS_SOURCE = "./public/sass/**/*.scss";
 
 
 
@@ -19,7 +19,7 @@ gulp.task("sass", function() {
   return gulp
     .src(SASS_SOURCE)
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest(DIST + "/css"))
+    .pipe(gulp.dest(DIST + "/sass"))
     .pipe(browserSync.stream());
 });
 
