@@ -51,7 +51,3 @@ document.addEventListener("scroll", () => {
     }
 });
 
-console.log('Total love');
-// Load 1
-
-
