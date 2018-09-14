@@ -19,7 +19,8 @@ gulp.task("sass", function() {
   return gulp
     .src(SASS_SOURCE)
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest(DIST + "/css"));
+    .pipe(gulp.dest(DIST + "/css"))
+    .pipe(browserSync.stream());
 });
 
 
@@ -59,7 +60,7 @@ gulp.task("browser-sync", function() {
   });
 });
 gulp.task("watch", () => {
-  gulp.watch([SCRIPT_SOURCE, HTML_SOURCE, CSS_SOURCE], ["js-watch", "scripts"]);
+  gulp.watch([SCRIPT_SOURCE, HTML_SOURCE, SASS_SOURCE], ["js-watch", "scripts", "sass"]);
 });
 gulp.task("default", ["js-watch", "watch"], function() {
   // Serve files from the root of this project

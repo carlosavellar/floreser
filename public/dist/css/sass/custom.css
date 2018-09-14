@@ -1,4 +1,32 @@
-body {
-  border: 5px solid red; }
-  body p {
-    border: 5px solid #fff; }
+#video {
+  background: #333;
+  overflow: hidden; }
+
+#myVideo {
+  max-width: 300%;
+  z-index: -100;
+  margin: 0 auto;
+  min-width: 100%;
+  min-height: 100%; }
+
+#myVideo-full {
+  width: 100%; }
+
+#btn-full-video button {
+  position: absolute;
+  z-index: 999;
+  top: 300px;
+  width: 100%; }
+
+#logo {
+  position: absolute;
+  z-index: 999;
+  margin: auto;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: -100px span;
+    margin-left-left: 50%;
+    margin-left-margin-left: -100px; }
