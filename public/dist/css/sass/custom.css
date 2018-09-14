@@ -1,3 +1,6 @@
+.displayNone {
+  display: none; }
+
 #video {
   background: #333;
   overflow: hidden;
@@ -19,6 +22,13 @@
   top: 300px;
   width: 100%; }
 
+.navbar-nav {
+  width: 100%;
+  text-align: center; }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
+
 #logo {
   position: absolute;
   z-index: 999;
@@ -31,3 +41,15 @@
   margin-left: -100px span;
     margin-left-left: 50%;
     margin-left-margin-left: -100px; }
+
+#nav-BigScreen ul {
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    @displayNone; } }
