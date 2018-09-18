@@ -2,19 +2,6 @@
 #video_modal {
   max-width: 700px !important; }
 
-@minxin displayNone {
-  display: none; }
-
-#countdown h3 {
-  font: 900 7em "Poppins", Arial, verdana, sans-serif, normal; }
-
-#countdown p {
-  font: "Poppins", Arial, verdana, sans-serif, normal !important;
-  font-weight: 700; }
-
-#countdown h2 {
-  font: 4.7em "Bariol"; }
-
 #video {
   background: #333;
   overflow: hidden;
@@ -36,18 +23,7 @@
   top: 300px;
   width: 100%; }
 
-#exampleModalCenter .modal-content {
-  background-color: none !important;
-  background-color: transparent !important; }
-
-.navbar-nav {
-  width: 100%;
-  text-align: center; }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block; }
-
-#logo {
+section#video #logo {
   position: absolute;
   z-index: 999;
   margin: auto;
@@ -60,23 +36,67 @@
     margin-left-left: 50%;
     margin-left-margin-left: -100px; }
 
-#nav-BigScreen ul {
-  margin: auto;
-  position: absolute;
-  top: 90px;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-  #nav-BigScreen ul li {
-    z-index: 100; }
-
 section#video #playBtn {
   border: 3px solid red;
   z-index: 11000 !important; }
 
+#exampleModalCenter .modal-content {
+  background-color: none !important;
+  background-color: transparent !important; }
+
+.navbar-nav {
+  width: 100%;
+  text-align: center; }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
+
+header #nav-BigScreen ul {
+  margin: auto;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  header #nav-BigScreen ul li {
+    z-index: 100; }
+
+header #dataEvt {
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 section#countdown {
   background: url("../img/bg-timer.jpg") center bottom no-repeat;
   background-size: cover; }
+
+section#countdown h3 {
+  font: 900 7em "Poppins", Arial, verdana, sans-serif, normal; }
+
+section#countdown p {
+  font: "Poppins", Arial, verdana, sans-serif, normal !important;
+  font-weight: 700; }
+
+section#countdown h2 {
+  font: 4.7em "Bariol"; }
+
+section#inscreva-se h2 {
+  font: 4.7em "Bariol"; }
+
+section#inscreva-se {
+  background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat;
+  background-size: cover; }
+
+section#enxoval {
+  background: url("../img/bg-enxoval.jpg") center bottom no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+section#enxoval h2 {
+  font: 4.7em "Bariol"; }
 
 section#sobrenos {
   background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat;
@@ -91,18 +111,42 @@ section#video #divplay {
 #video_modal {
   max-width: 1200px !important; }
 
+section#caronas h2 {
+  font: 4.7em "Bariol"; }
+
+section#caronas {
+  background: url("../img/bg-decarona.jpg") center bottom no-repeat;
+  background-size: cover; }
+
+@media (max-width: 767px) {
+  section#countdown h3 {
+    font: 900 3em "Poppins", Arial, verdana, sans-serif, normal; }
+  section#countdown p {
+    font: "Poppins", Arial, verdana, sans-serif, normal !important;
+    font-weight: 700; }
+  section#countdown h2 {
+    font: 4.7em "Bariol"; } }
+
 @media (min-width: 992px) {
-  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevas-se {
+  section#countdown #numbers div:nth-child(2) {
+    padding-left: 45px !important; }
+  section#countdown #numbers div:nth-child(4) {
+    position: relative;
+    left: -10px; }
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
     padding: 4.5em; } }
 
 @media (max-width: 991px) {
   #nav-responsive {
     display: block; }
   #nav-BigScreen {
-    display: none; } }
+    display: none; }
+  section#countdown #numbers div:nth-child(4) {
+    position: relative;
+    left: -10px; } }
 
 @media (min-width: 1200px) {
-  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevas-se {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
     padding: 7.5em; }
   section#countdown #numbers div:nth-child(2) {
     padding-left: 45px !important; }
