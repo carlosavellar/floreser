@@ -52,6 +52,3 @@ document.addEventListener("scroll", () => {
 });
 
 // Easy Slide nav
-window.slide = new SlideNav({
-    changeHash: true
-    });

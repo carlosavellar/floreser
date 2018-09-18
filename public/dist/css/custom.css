@@ -1,8 +1,19 @@
+@import url(fonts/stylesheet.css);
 #video_modal {
   max-width: 700px !important; }
 
 @minxin displayNone {
   display: none; }
+
+#countdown h3 {
+  font: 900 7em "Poppins", Arial, verdana, sans-serif, normal; }
+
+#countdown p {
+  font: "Poppins", Arial, verdana, sans-serif, normal !important;
+  font-weight: 700; }
+
+#countdown h2 {
+  font: 4.7em "Bariol"; }
 
 #video {
   background: #333;
@@ -56,6 +67,23 @@
   left: 0;
   bottom: 0;
   right: 0; }
+  #nav-BigScreen ul li {
+    z-index: 100; }
+
+section#video #playBtn {
+  border: 3px solid red;
+  z-index: 11000 !important; }
+
+section#countdown {
+  background: url("../img/bg-timer.jpg") center bottom no-repeat;
+  background-size: cover; }
+
+section#sobrenos {
+  background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat;
+  background-size: cover; }
+
+section#video #divplay {
+  z-index: 11000 !important; }
 
 #nav-responsive {
   display: none; }
@@ -63,8 +91,21 @@
 #video_modal {
   max-width: 1200px !important; }
 
+@media (min-width: 992px) {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevas-se {
+    padding: 4.5em; } }
+
 @media (max-width: 991px) {
   #nav-responsive {
     display: block; }
   #nav-BigScreen {
     display: none; } }
+
+@media (min-width: 1200px) {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevas-se {
+    padding: 7.5em; }
+  section#countdown #numbers div:nth-child(2) {
+    padding-left: 45px !important; }
+  section#countdown #numbers div:nth-child(4) {
+    position: relative;
+    left: -10px; } }

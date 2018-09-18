@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./dist/util/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="./dist/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,7 +21,6 @@
       <div class="modal-content">
         <!-- <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-           
             </div> -->
         <div class="modal-body">
 
@@ -55,16 +56,16 @@
                 <a class="nav-link" href="#sobrenos">SOBRE NÓS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ENXOVAL</a>
+                <a class="nav-link" href="#enxoval">ENXOVAL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">INSCREVA-SE</a>
+                <a class="nav-link" href="#inscrevas-se">INSCREVA-SE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">MAPA</a>
+                <a class="nav-link disabled" href="#map">MAPA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">CONTATO</a>
+                <a class="nav-link disabled" href="#contato">CONTATO</a>
               </li>
         </ul>
   
@@ -76,76 +77,75 @@
           <a class="nav-link" href="#sobrenos">SOBRE NÓS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ENXOVAL</a>
+          <a class="nav-link" href="#enxoval">ENXOVAL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">INSCREVA-SE</a>
+          <a class="nav-link" href="#inscrevas-se">INSCREVA-SE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">MAPA</a>
+          <a class="nav-link disabled" href="#map">MAPA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">CONTATO</a>
+          <a class="nav-link disabled" href="#contato">CONTATO</a>
         </li>
       </ul>
     </nav>
-
-
   </header>
-
-
   <section id="video">
-    <div class="container text-center">
-      <div id="logo">
-        <span>
-          <img src="dist/img/logo.png">
-          <div><button id="playBtn" type="button" lass="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              <i class="fas fa-play"></i> Play</button>
-          </div>
-        </span>
-      </div>
-      <div id="btn-full-video"></div>
-
-    </div>
+   
     <video autoplay muted loop id="myVideo">
       <source src="Roller-Coaster.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
+    <div class="container text-center">
+        <div id="logo">
+          <span>
+            <img src="dist/img/logo.png">
+            <div id="divplay"><button id="playBtn" type="button" lass="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fas fa-play"></i> Play</button>
+            </div>
+          </span>
+          <div id="btn-full-video"></div>
+        </div>
+  
+      </div>
   </section>
   <section id="countdown">
     <div class="container text-center">
-      <div id="thetime">The time</div>
+      <!-- <div id="thetime">The time</div> -->
       <div class="row">
         <div class="col-sm">
           <h2 class="text-left">Participe</h2>
         </div>
       </div>
-      <div class="row">
+      <div id="numbers" class="row">
+        
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2>--</h2>
-          <p>Meses</p>
-          <p>Ico</p>
-        </div>
-        <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2 class="dias">--</h2>
+          <h3 class="dias">--</h3>
           <p>Dias</p>
-          <p>Ico</p>
+          <p><img src="dist/img/icones-do-timer-01.png"></p>
         </div>
+    
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2 class="horas">--</h2>
+          <h3 class="horas">--</h3>
           <p>Horas</p>
-          <p>Ico</p>
+          <p><img src="dist/img/icones-do-timer-03.png"></p>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2 class="minutos">--</h2>
+          <h3 class="minutos">--</h3>
           <p>Minutos</p>
-          <p>Ico</p>
+          <p><img src="dist/img/icones-do-timer-04.png"></p>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">
-          <h2 class="segundos">--</h2>
+          <h3 class="segundos">--</h3>
           <p>Segudos</p>
-          <p>Ico</p>
+          <p><img src="dist/img/icones-do-timer-05.png"></p>
         </div>
+        <!-- <div class="col-sm-2 col-md-2 col-lg-2">
+          <h3 class=""></h3>
+          <p>Dias</p>
+          <p><img src="dist/img/icones-do-timer-02.png"></p>
+        </div> -->
       </div>
 
     </div>
@@ -155,10 +155,10 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
 
-          <p class="text-center">Illustração</p>
+          <!-- <p class="text-center"><img src="dist/img/team.png"></p> -->
 
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <h2>Sobre nós</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit libero, imperdiet ac sollicitudin eu,
             sagittis quis ex. Curabitur sed efficitur orci, ac malesuada arcu. Nulla vitae sagittis leo, eget sagittis
@@ -178,7 +178,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-8 col-lg-8">
-          <h2 class="">Inscrevase</h2>
+          <h2 class="">Inscreva-se</h2>
           <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit libero.</p>
           <button type="button" class="btn btn-primary">Inscreva-se</button>
         </div>
@@ -243,7 +243,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-7 col-lg-7">
+        <div class="col-sm-12 col-md-8 col-lg-8">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <ul>
@@ -277,7 +277,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-5">
+        <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="card" style="width: 18rem;">
             <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
             <div class="card-body">
