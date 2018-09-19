@@ -56,7 +56,7 @@ section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repe
 section#enxoval { h2{ font: $titFontSize $titFontFamyly; } }
 
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
-section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;}   }
+section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; }
 
   #nav-responsive{ display: none; }
@@ -67,6 +67,10 @@ section#video #divplay { z-index: 11000 !important; }
 
   section#caronas { background: url("../img/bg-decarona.jpg") center bottom no-repeat; background-size: cover; }
 // Small devices (landscape phones, 576px and up)
+
+
+
+
 @media (min-width: 576px) { 
 
  
@@ -87,7 +91,8 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
 @media (max-width: 991px) { 
     #nav-responsive{ display: block; }
     #nav-BigScreen{ display: none; }
-    section#countdown { #numbers { div:nth-child(2){  } div:nth-child(4){ position: relative; left: -10px;  } } }
+    section#countdown { #horas{ position: relative; left: 3%;} }
+    section#countdown { #numbers { div:nth-child(2){ border: 2px soldid red;  } div:nth-child(4){ position: relative; left: -10px;  } } }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 

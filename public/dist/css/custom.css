@@ -159,6 +159,11 @@ section#caronas {
     display: block; }
   #nav-BigScreen {
     display: none; }
+  section#countdown #horas {
+    position: relative;
+    left: 3%; }
+  section#countdown #numbers div:nth-child(2) {
+    border: 2px soldid red; }
   section#countdown #numbers div:nth-child(4) {
     position: relative;
     left: -10px; } }

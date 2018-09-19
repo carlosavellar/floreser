@@ -13,8 +13,6 @@ const HTML_SOURCE = "./public/**/*.html";
 const SCRIPT_SOURCE = "./public/js/**/*.js";
 const SASS_SOURCE = "./public/sass/**/*.scss";
 
-
-
 gulp.task("sass", function() {
  gulp.src(SASS_SOURCE)
     .pipe(sass().on("error", sass.logError))
