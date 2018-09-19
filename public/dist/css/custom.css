@@ -1,4 +1,11 @@
 @import url(fonts/stylesheet.css);
+ul li, p {
+  line-height: 32px;
+  font-size: 21px;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 1.5px; }
+
 #video_modal {
   max-width: 700px !important; }
 
@@ -28,7 +35,7 @@ section#video #logo {
   z-index: 999;
   margin: auto;
   position: absolute;
-  top: 200px;
+  top: 110px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -83,6 +90,13 @@ section#countdown p {
 section#countdown h2 {
   font: 4.7em "Bariol"; }
 
+section#countdown .hexagonos {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 section#inscreva-se h2 {
   font: 4.7em "Bariol"; }
 
@@ -101,6 +115,10 @@ section#enxoval h2 {
 section#sobrenos {
   background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat;
   background-size: cover; }
+
+section#sobrenos h2 {
+  font: 4.7em "Bariol";
+  color: #fff; }
 
 section#video #divplay {
   z-index: 11000 !important; }
@@ -152,4 +170,6 @@ section#caronas {
     padding-left: 45px !important; }
   section#countdown #numbers div:nth-child(4) {
     position: relative;
-    left: -10px; } }
+    left: -10px; }
+  section#countdown .hexagonos {
+    top: -210px; } }
