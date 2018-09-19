@@ -143,7 +143,15 @@ section#caronas {
     font: "Poppins", Arial, verdana, sans-serif, normal !important;
     font-weight: 700; }
   section#countdown h2 {
-    font: 4.7em "Bariol"; } }
+    font: 4.7em "Bariol"; }
+  #myVideo {
+    display: none; }
+  #video {
+    height: 590px;
+    background-color: #052f9a;
+    background-image: url("../img/bg-decarona.jpg") center cover; }
+  section#countdown .hexagonos {
+    top: -10px; } }
 
 @media (min-width: 992px) {
   section#countdown #numbers div:nth-child(2) {
@@ -152,13 +160,15 @@ section#caronas {
     position: relative;
     left: -10px; }
   section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
-    padding: 4.5em; } }
+    padding: 7.5em 0; } }
 
 @media (max-width: 991px) {
   #nav-responsive {
     display: block; }
   #nav-BigScreen {
     display: none; }
+  section#countdown .hexagonos {
+    top: -210px; }
   section#countdown #horas {
     position: relative;
     left: 3%; }
@@ -166,7 +176,9 @@ section#caronas {
     border: 2px soldid red; }
   section#countdown #numbers div:nth-child(4) {
     position: relative;
-    left: -10px; } }
+    left: -10px; }
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
+    padding: 7.5em 0; } }
 
 @media (min-width: 1200px) {
   section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {

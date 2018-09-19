@@ -23,12 +23,14 @@ $ligghtWeight:          100;
 
 // Paddings
 $sectionPadd:           7.5em;
-$sectionPadd900:        4.5em;
+$sectionPadd900:        7.5em;
 
 /////@at-root
 
 // Colors
 $white:               #fff;
+$blue:                #052f9a;
+
 ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWeight; color: $white; letter-spacing: $letterSpacing; }
 #video_modal{ max-width: 700px !important; }
 #video{ background: #333; overflow: hidden; height: 674px; }
@@ -81,18 +83,23 @@ section#video #divplay { z-index: 11000 !important; }
 }
 @media (max-width: 767px) {  
     section#countdown{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
+     #myVideo{ display: none; }
+     #video {  height: 590px; background-color: $blue; background-image: url("../img/bg-decarona.jpg") center cover;; }
+     section#countdown .hexagonos { top: -10px;  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 section#countdown { #numbers { div:nth-child(2){ padding-left: 45px !important; } div:nth-child(4){ position: relative; left: -10px;  } } }    
-section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd900; }
+section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd900 0; }
 }
 @media (max-width: 991px) { 
     #nav-responsive{ display: block; }
     #nav-BigScreen{ display: none; }
+    section#countdown .hexagonos { top: -210px;  }
     section#countdown { #horas{ position: relative; left: 3%;} }
     section#countdown { #numbers { div:nth-child(2){ border: 2px soldid red;  } div:nth-child(4){ position: relative; left: -10px;  } } }
+    section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd900 0; }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
