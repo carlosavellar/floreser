@@ -42,13 +42,13 @@ ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWei
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
 section#video #logo{ position: absolute; margin: auto; position: absolute; top:81px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
 section#video #arrow-see-more { position: relative; top: 20px; font-size: 25px; transition-duration: 0.3s; border-radius: 1px; &:link { color: $white; } &:hover { position: relative; top: 30px; color: #999 !important; } z-index: 1999; }
-section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; } }
+section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; z-index: 2000; } }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
 
 .navbar-nav { width: 100%; text-align: center; > li { float: none; display: inline-block; } }
 
-header #nav-BigScreen{ ul{ margin: auto; position: absolute; top: 63px; left: 0; bottom: 0; right: 0; li{ z-index: 100; } } }
+header #nav-BigScreen{ ul{ margin: auto; position: absolute; top: 63px; left: 0; bottom: 0; right: 0; li{ z-index: 100;  height: 50px; } } }
 header #dataEvt { @include absoluteCenter; }
 
 section#countdown { background: url("../img/bg-timer.jpg") center bottom no-repeat; background-size: cover; }
@@ -59,8 +59,8 @@ section#inscreva-se { h2{ font: $titFontSize $titFontFamyly; }   }
 section#inscreva-se { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
 section#inscreva-se #inscricaoBtn { @include btnBorderRadius; }
 section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repeat; background-size: cover; color: $white; }
-section#enxoval { h2{ font: $titFontSize $titFontFamyly; } }
-
+section#enxoval { h2{ font: $titFontSize $titFontFamyly; } ul li { list-style: none; font-size: 16px; } ul { padding-left: 0;  } }
+ 
 
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
