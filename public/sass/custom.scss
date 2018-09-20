@@ -2,6 +2,8 @@
 @mixin displayNone  { display: none; }
 @mixin absoluteCenter   { margin: auto; position: absolute; top: 10px; left: 0; bottom: 0; right: 0;}
 @mixin absoluteCenterGeneral   { margin: auto; position: absolute; left: 0; bottom: 0; right: 0;}
+@mixin dropShadow { -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31); -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31); box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31);}
+@mixin btnBorderRadius {-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;}
 
 // Fonts
 $fontNumber:         7em;
@@ -38,8 +40,9 @@ ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWei
 #myVideo { max-width: 300%; z-index: -100; margin: 0 auto; min-width: 100%; min-height: 100%; }
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
-section#video #logo{ position: absolute; margin: auto; position: absolute; top: 110px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
-section#video { #playBtn2 {  border-radius: 3.25rem !important;  }
+section#video #logo{ position: absolute; margin: auto; position: absolute; top:81px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
+section#video #arrow-see-more { position: relative; top: 20px; font-size: 25px; transition-duration: 0.3s; border-radius: 1px; &:link { color: $white; } &:hover { position: relative; top: 30px; color: #999 !important; } z-index: 1999; }
+section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; } }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
 
@@ -54,7 +57,7 @@ section#countdown .hexagonos { @include absoluteCenterGeneral;  }
 
 section#inscreva-se { h2{ font: $titFontSize $titFontFamyly; }   }
 section#inscreva-se { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
-
+section#inscreva-se #inscricaoBtn { @include btnBorderRadius; }
 section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repeat; background-size: cover; color: $white; }
 section#enxoval { h2{ font: $titFontSize $titFontFamyly; } }
 
@@ -62,7 +65,6 @@ section#enxoval { h2{ font: $titFontSize $titFontFamyly; } }
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; }
-
 
 section#contato { background-color: #3e51a0; }
   #nav-responsive{ display: none; z-index: 1000; }
@@ -107,6 +109,7 @@ section#countdown .hexagonos-resp { display: none;  }
      section#inscreva-se { h2 { font-size: $titFontSize768 !important; } }
      section#enxoval { h2 { font-size: $titFontSize768 !important; } }
      section#sobrenos {h2 { font-size: $titFontSize768 !important; }
+
     }
 }
 
@@ -122,7 +125,9 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
     section#countdown { #horas{ position: relative; left: 3%;} }
     section#countdown { #numbers { div:nth-child(2){ border: 2px soldid red;  } div:nth-child(4){ position: relative; left: -10px;  } } }
     section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd900 0; }
-  
+    section#sobrenos { background: url("../img/bg-sobre-nos-767.jpg") center bottom no-repeat; background-size: cover; }
+    section#inscreva-se { background: url("../img/bg-inscreva-se-767.jpg") center bottom no-repeat; background-size: cover; }
+
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
@@ -153,24 +158,4 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
     section#countdown .hexagonos {
         top: -210px;
     }
-}
-a#arrow-see-more {
-    a {
-        color: $white !important;
-
-        &:link {
-            color: $white;
-        }
-
-        &:hover {
-            color: #333;
-        }
-    }
-    i{
-        color: $white !important;
-    }
-
-    z-index: 1999;
-    position: relative;
-    top: 20px;
 }

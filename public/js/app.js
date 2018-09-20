@@ -30,7 +30,7 @@ if (distance < 0) {
 }
 
 //// Video
-const btnPlay = document.getElementById("playBtn");
+const btnPlay = document.getElementById("playBtn2");
 const fullVideo = document.getElementById("myVideo-full");
 const myVideo = document.getElementById("myVideo");
 const btnClose = document.getElementById("closeBot");
