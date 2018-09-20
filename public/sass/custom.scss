@@ -62,6 +62,7 @@ section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-r
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; }
 
+section#contato { background-color: #3e51a0=; }
   #nav-responsive{ display: none; z-index: 1000; }
   #video_modal{ max-width: 1200px !important; }
 
@@ -82,7 +83,7 @@ section#countdown .hexagonos-resp { display: none;  }
 }
 @media (max-width: 575px) { 
     section#countdown .hexagonos { display: none;  }
-    section#countdown .hexagonos-resp { display: block; @include absoluteCenterGeneral; top: -131px; z-index: +1; }
+    section#countdown .hexagonos-resp { display: block; @include absoluteCenterGeneral; top: -101px; z-index: +1; }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
@@ -92,7 +93,7 @@ section#countdown .hexagonos-resp { display: none;  }
     section#countdown .hexagonos { top: -70px !important; }
     section#countdown{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
      #myVideo{ display: none; }
-     #video {  height: 590px; background-color: $blue; background: url("../img/bg-responsive.jpg") center cover; }
+     #video {  height: 550px; background-color: $blue; background: url("../img/bg-resp.jpg"); background-position: center top; }
      section#countdown .hexagonos { top: -10px;  }
      .ico { display: none; }
      #numbers { text-align: left; p { font-size: 15px;  position: relative; top: -18px; } }

@@ -122,6 +122,9 @@ section#sobrenos h2 {
 section#video #divplay {
   z-index: 11000 !important; }
 
+section#contato {
+  background-color: #3e51a0; }
+
 #nav-responsive {
   display: none;
   z-index: 1000; }
@@ -149,7 +152,7 @@ section#countdown .hexagonos-resp {
     left: 0;
     bottom: 0;
     right: 0;
-    top: -131px;
+    top: -101px;
     z-index: +1; } }
 
 @media (max-width: 767px) {
@@ -165,9 +168,10 @@ section#countdown .hexagonos-resp {
   #myVideo {
     display: none; }
   #video {
-    height: 590px;
+    height: 550px;
     background-color: #052f9a;
-    background: url("../img/bg-responsive.jpg") center cover; }
+    background: url("../img/bg-resp.jpg");
+    background-position: center top; }
   section#countdown .hexagonos {
     top: -10px; }
   .ico {

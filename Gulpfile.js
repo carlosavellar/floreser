@@ -15,8 +15,10 @@ const SASS_SOURCE = "./public/sass/**/*.scss";
 
 gulp.task("sass", function() {
  gulp.src(SASS_SOURCE)
+    .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(CSS))
+    .pipe(sourcemaps.write())
     .pipe(browserSync.stream());
 });
 
