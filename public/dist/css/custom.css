@@ -49,7 +49,7 @@ section#video #arrow-see-more {
   position: relative;
   top: 20px;
   font-size: 25px;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   border-radius: 1px;
   z-index: 1999; }
   section#video #arrow-see-more:link {
@@ -165,7 +165,10 @@ section#inscreva-se #inscricaoBtn {
   border: 1px solid #97b43d;
   font-size: 2em;
   padding: 5px 35px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition-duration: 0.2s; }
+  section#inscreva-se #inscricaoBtn:hover {
+    background-color: #809933; }
 
 section#enxoval {
   background: url("../img/bg-enxoval.jpg") center bottom no-repeat;

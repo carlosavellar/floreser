@@ -6,6 +6,8 @@
 @mixin btnBorderRadius {-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;}
 @mixin btnVerde { @include dropShadow; background-color: $verdeMedio; border: 1px solid $verdeMedio + 1; font-size: 2em; padding: 5px 35px; margin-bottom: 30px; }
 @mixin textShadow { text-shadow: 1px 1px 5px rgba(150, 150, 150, 1) }
+@mixin opacity {  }
+
 // Fonts
 $fontNumber:         7em;
 $fontNumberFamily:  'Poppins', Arial, verdana, sans-serif, normal;
@@ -41,6 +43,7 @@ $verdeAzul:           #45568b;
 $azul:                #3d41a0;
 
 $verdeMedio:          #96b33c;
+$verdeMedioHover:     #809933;
 
 $azulTitulosH2:       #3d51a0;
 
@@ -53,7 +56,7 @@ ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWei
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
 section#video #logo{ position: absolute; margin: auto; position: absolute; top:81px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
-section#video #arrow-see-more { position: relative; top: 20px; font-size: 25px; transition-duration: 0.3s; border-radius: 1px; &:link { color: $white; } &:hover { position: relative; top: 30px; color: #999 !important; } z-index: 1999; }
+section#video #arrow-see-more { position: relative; top: 20px; font-size: 25px; transition-duration: 0.2s; border-radius: 1px; &:link { color: $white; } &:hover { position: relative; top: 30px; color: #999 !important; } z-index: 1999; }
 section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; padding: 7px 30px; z-index: 2000; } }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
@@ -66,15 +69,15 @@ header #dataEvt { @include absoluteCenter; }
 section#countdown { background: url("../img/bg-timer.jpg") center bottom no-repeat; background-size: cover; }
 section#countdown{ h3 { font:900 $fontNumber $fontNumberFamily; } p { font: $fontNumberFamily !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly; }}
 section#countdown .hexagonos { @include absoluteCenterGeneral;  }
-section#countdown #numbers { div:nth-child(1){ color: $verde; p{ color: $verde; }  } }
-section#countdown #numbers { div:nth-child(2){ color: $verdeEscuro; p{ color: $verdeEscuro } } }
-section#countdown  #numbers { div:nth-child(3){ color: $verdeAzul; p{ color: $verdeAzul } } }
-section#countdown  #numbers { div:nth-child(4){ color: $azul; p{ color: $azul } } }
+section#countdown #numbers { div:nth-child(1){ color: $verde; p{ color: $verde; } @include opacity } }
+section#countdown #numbers { div:nth-child(2){ color: $verdeEscuro; p{ color: $verdeEscuro } @include opacity } }
+section#countdown  #numbers { div:nth-child(3){ color: $verdeAzul; p{ color: $verdeAzul } @include opacity } }
+section#countdown  #numbers { div:nth-child(4){ color: $azul; p{ color: $azul } @include opacity } }
 section#countdown  { h2 { color: #3d51a0; } }
 
 section#inscreva-se { h2{ font: $titFontSize $titFontFamyly; color: $azul; } p{ color: $azul; }  }
 section#inscreva-se { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
-section#inscreva-se #inscricaoBtn { @include btnBorderRadius; @include btnVerde;  }
+section#inscreva-se #inscricaoBtn { @include btnBorderRadius; @include btnVerde; transition-duration: 0.2s; &:hover { background-color: $verdeMedioHover; }  }
 section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repeat; background-size: cover; color: $white; }
 section#enxoval { h2{ font: $titFontSize $titFontFamyly; } ul li { list-style: none; font-size: 16px; } ul { padding-left: 0;  } }
  
