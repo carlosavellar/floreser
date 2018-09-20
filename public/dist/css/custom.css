@@ -32,7 +32,6 @@ ul li, p {
 
 section#video #logo {
   position: absolute;
-  z-index: 999;
   margin: auto;
   position: absolute;
   top: 110px;
@@ -124,7 +123,8 @@ section#video #divplay {
   z-index: 11000 !important; }
 
 #nav-responsive {
-  display: none; }
+  display: none;
+  z-index: 1000; }
 
 #video_modal {
   max-width: 1200px !important; }
@@ -136,7 +136,25 @@ section#caronas {
   background: url("../img/bg-decarona.jpg") center bottom no-repeat;
   background-size: cover; }
 
+section#countdown .hexagonos-resp {
+  display: none; }
+
+@media (max-width: 575px) {
+  section#countdown .hexagonos {
+    display: none; }
+  section#countdown .hexagonos-resp {
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -131px;
+    z-index: +1; } }
+
 @media (max-width: 767px) {
+  section#countdown .hexagonos {
+    top: -70px !important; }
   section#countdown h3 {
     font: 900 3em "Poppins", Arial, verdana, sans-serif, normal; }
   section#countdown p {
@@ -149,9 +167,33 @@ section#caronas {
   #video {
     height: 590px;
     background-color: #052f9a;
-    background-image: url("../img/bg-decarona.jpg") center cover; }
+    background: url("../img/bg-responsive.jpg") center cover; }
   section#countdown .hexagonos {
-    top: -10px; } }
+    top: -10px; }
+  .ico {
+    display: none; }
+  #numbers {
+    text-align: left; }
+    #numbers p {
+      font-size: 15px;
+      position: relative;
+      top: -18px; }
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
+    padding: 2.5em 0 !important; }
+  section#countdown #numbers div:nth-child(4) {
+    left: 0 !important; }
+  section#countdown h2 {
+    font-size: 3.8em !important; }
+  section#inscreva-se h2 {
+    font-size: 3.8em !important; }
+  section#caronas h2 {
+    font-size: 3.8em !important; }
+  section#inscreva-se h2 {
+    font-size: 3.8em !important; }
+  section#enxoval h2 {
+    font-size: 3.8em !important; }
+  section#sobrenos h2 {
+    font-size: 3.8em !important; } }
 
 @media (min-width: 992px) {
   section#countdown #numbers div:nth-child(2) {

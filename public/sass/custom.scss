@@ -17,13 +17,14 @@ $letterSpacing:      1.5px;
 $fontNumber768:         3em;
 $fontNumberFamily768:  'Poppins', Arial, verdana, sans-serif, normal;
 $titFontFamyly768:     'Bariol'; 
-$titFontSize768:        4.7em;
+$titFontSize768:        3.8em;
 $fontBold768:           700;
 $ligghtWeight:          100;
 
 // Paddings
 $sectionPadd:           7.5em;
 $sectionPadd900:        7.5em;
+$sectionPadd767:        2.5em;
 
 /////@at-root
 
@@ -37,7 +38,7 @@ ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWei
 #myVideo { max-width: 300%; z-index: -100; margin: 0 auto; min-width: 100%; min-height: 100%; }
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
-section#video #logo{ position: absolute; z-index: 999; margin: auto; position: absolute; top: 110px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
+section#video #logo{ position: absolute; margin: auto; position: absolute; top: 110px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
 section#video { #playBtn {  border: 3px solid red; z-index: 11000 !important;  }  }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
@@ -61,31 +62,48 @@ section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-r
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; }
 
-  #nav-responsive{ display: none; }
+  #nav-responsive{ display: none; z-index: 1000; }
   #video_modal{ max-width: 1200px !important; }
 
   section#caronas { h2{ font: $titFontSize $titFontFamyly; }   }
  
 
+
   section#caronas { background: url("../img/bg-decarona.jpg") center bottom no-repeat; background-size: cover; }
 // Small devices (landscape phones, 576px and up)
 
 
+section#countdown .hexagonos-resp { display: none;  }
 
 
 @media (min-width: 576px) { 
 
  
 }
+@media (max-width: 575px) { 
+    section#countdown .hexagonos { display: none;  }
+    section#countdown .hexagonos-resp { display: block; @include absoluteCenterGeneral; top: -131px; z-index: +1; }
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
 
 }
-@media (max-width: 767px) {  
+@media (max-width: 767px) { 
+    section#countdown .hexagonos { top: -70px !important; }
     section#countdown{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
      #myVideo{ display: none; }
-     #video {  height: 590px; background-color: $blue; background-image: url("../img/bg-decarona.jpg") center cover;; }
+     #video {  height: 590px; background-color: $blue; background: url("../img/bg-responsive.jpg") center cover; }
      section#countdown .hexagonos { top: -10px;  }
+     .ico { display: none; }
+     #numbers { text-align: left; p { font-size: 15px;  position: relative; top: -18px; } }
+     section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd767 0 !important; }
+     section#countdown #numbers div:nth-child(4) { left: 0 !important; }
+     section#countdown{ h2 { font-size: $titFontSize768 !important; } }
+     section#inscreva-se { h2 { font-size: $titFontSize768 !important; }  }
+     section#caronas { h2 { font-size: $titFontSize768 !important; }   }
+     section#inscreva-se { h2 { font-size: $titFontSize768 !important; } }
+     section#enxoval { h2 { font-size: $titFontSize768 !important; } }
+     section#sobrenos {h2 { font-size: $titFontSize768 !important; }}
 }
 
 // Large devices (desktops, 992px and up)
@@ -100,6 +118,7 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
     section#countdown { #horas{ position: relative; left: 3%;} }
     section#countdown { #numbers { div:nth-child(2){ border: 2px soldid red;  } div:nth-child(4){ position: relative; left: -10px;  } } }
     section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd900 0; }
+  
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
