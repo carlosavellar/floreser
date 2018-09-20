@@ -39,7 +39,7 @@ ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWei
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
 section#video #logo{ position: absolute; margin: auto; position: absolute; top: 110px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
-section#video { #playBtn {  border: 3px solid red; z-index: 11000 !important;  }  }
+section#video { #playBtn2 {  border-radius: 3.25rem !important;  }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
 
@@ -58,11 +58,13 @@ section#inscreva-se { background: url("../img/bg-inscreva-se.jpg") center bottom
 section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repeat; background-size: cover; color: $white; }
 section#enxoval { h2{ font: $titFontSize $titFontFamyly; } }
 
+
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; }
 
-section#contato { background-color: #3e51a0=; }
+
+section#contato { background-color: #3e51a0; }
   #nav-responsive{ display: none; z-index: 1000; }
   #video_modal{ max-width: 1200px !important; }
 
@@ -104,7 +106,8 @@ section#countdown .hexagonos-resp { display: none;  }
      section#caronas { h2 { font-size: $titFontSize768 !important; }   }
      section#inscreva-se { h2 { font-size: $titFontSize768 !important; } }
      section#enxoval { h2 { font-size: $titFontSize768 !important; } }
-     section#sobrenos {h2 { font-size: $titFontSize768 !important; }}
+     section#sobrenos {h2 { font-size: $titFontSize768 !important; }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -122,8 +125,52 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
   
 }
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se { padding: $sectionPadd; }
-    section#countdown { #numbers { div:nth-child(2){ padding-left: 45px !important; } div:nth-child(4){ position: relative; left: -10px; ; } } }
-    section#countdown .hexagonos { top: -210px;  }
+@media (min-width: 1200px) {
+
+    section#countdown,
+    section#sobrenos,
+    section#enxoval,
+    section#caronas,
+    section#contato,
+    section#inscreva-se {
+        padding: $sectionPadd;
+    }
+
+    section#countdown {
+        #numbers {
+            div:nth-child(2) {
+                padding-left: 45px !important;
+            }
+
+            div:nth-child(4) {
+                position: relative;
+                left: -10px;
+
+            }
+        }
+    }
+
+    section#countdown .hexagonos {
+        top: -210px;
+    }
+}
+a#arrow-see-more {
+    a {
+        color: $white !important;
+
+        &:link {
+            color: $white;
+        }
+
+        &:hover {
+            color: #333;
+        }
+    }
+    i{
+        color: $white !important;
+    }
+
+    z-index: 1999;
+    position: relative;
+    top: 20px;
 }
