@@ -143,18 +143,18 @@ section#countdown #numbers div:nth-child(4) {
 section#countdown h2 {
   color: #3d51a0; }
 
-section#inscreva-se h2 {
+section#inscrevase h2 {
   font: 4.7em "Bariol";
   color: #3d41a0; }
 
-section#inscreva-se p {
+section#inscrevase p {
   color: #3d41a0; }
 
-section#inscreva-se {
+section#inscrevase {
   background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat;
   background-size: cover; }
 
-section#inscreva-se #inscricaoBtn {
+section#inscrevase #inscricaoBtn {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -167,7 +167,7 @@ section#inscreva-se #inscricaoBtn {
   padding: 5px 35px;
   margin-bottom: 30px;
   transition-duration: 0.2s; }
-  section#inscreva-se #inscricaoBtn:hover {
+  section#inscrevase #inscricaoBtn:hover {
     background-color: #809933; }
 
 section#enxoval {
@@ -263,20 +263,20 @@ section#countdown .hexagonos-resp {
       font-size: 15px;
       position: relative;
       top: -18px; }
-  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase {
     padding: 2.5em 0 !important; }
   section#countdown #numbers div:nth-child(4) {
     left: 0 !important; }
   section#countdown h2 {
     font-size: 3.8em !important; }
-  section#inscreva-se h2 {
+  section#inscrevase h2 {
     font-size: 3.8em !important; }
   section#caronas h2 {
     font-size: 3.8em !important;
     color: #3d51a0; }
   section#caronas p {
     color: #3d51a0; }
-  section#inscreva-se h2 {
+  section#inscrevase h2 {
     font-size: 3.8em !important; }
   section#enxoval h2 {
     font-size: 3.8em !important; }
@@ -289,7 +289,7 @@ section#countdown .hexagonos-resp {
   section#countdown #numbers div:nth-child(4) {
     position: relative;
     left: -10px; }
-  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase {
     padding: 7.5em 0; } }
 
 @media (max-width: 991px) {
@@ -307,12 +307,12 @@ section#countdown .hexagonos-resp {
   section#countdown #numbers div:nth-child(4) {
     position: relative;
     left: -10px; }
-  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscreva-se {
+  section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase {
     padding: 7.5em 0; }
   section#sobrenos {
     background: url("../img/bg-sobre-nos-767.jpg") center bottom no-repeat;
     background-size: cover; }
-  section#inscreva-se {
+  section#inscrevase {
     background: url("../img/bg-inscreva-se-767.jpg") center bottom no-repeat;
     background-size: cover; } }
 
@@ -321,7 +321,7 @@ section#countdown .hexagonos-resp {
   section#sobrenos,
   section#enxoval,
   section#contato,
-  section#inscreva-se {
+  section#inscrevase {
     padding: 7.5em; }
   section#caronas {
     padding: 0 7.5em; }
