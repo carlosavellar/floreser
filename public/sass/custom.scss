@@ -7,6 +7,7 @@
 @mixin btnVerde { @include dropShadow; background-color: $verdeMedio; border: 1px solid $verdeMedio + 1; font-size: 2em; padding: 5px 35px; margin-bottom: 30px; }
 @mixin textShadow { text-shadow: 1px 1px 5px rgba(150, 150, 150, 1) }
 @mixin opacity {  }
+@mixin bgTransparent {background-color: rgba(48, 77, 169, 0.8); background: rgba(48, 77, 169, 0.8); color: rgba(48, 77, 169, 0.8);}
 
 // Fonts
 $fontNumber:         7em;
@@ -55,6 +56,7 @@ h2{ @include textShadow; }
 ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWeight; color: $white; letter-spacing: $letterSpacing; }
 #video_modal{ max-width: 700px !important; }
 #video{ background: #333; overflow: hidden; height: 674px; }
+#filtroVideo { @include bgTransparent; position: absolute;   max-width: 300%;  margin: 0 auto; min-width: 100%; min-height: 84.5%; } 
 #myVideo { max-width: 300%; z-index: -100; margin: 0 auto; min-width: 100%; min-height: 100%; }
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
@@ -67,7 +69,7 @@ section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; padd
 .navbar-nav { width: 100%; text-align: center; > li { float: none; display: inline-block; } }
 
 header #nav-BigScreen{ ul{ margin: auto; position: absolute; top: 63px; left: 0; bottom: 0; right: 0; li{ z-index: 100;  height: 50px; } } }
-header #dataEvt { @include absoluteCenter; color: $white; top: 23px; }
+header #dataEvt { @include absoluteCenter; color: $white; top: 23px; z-index: +1; }
 header #nav-BigScreen ul li a,
 header #nav-responsive ul li a  { color: #fff; font-family: $titFontFamyly; transition-duration: $transition02s; &:hover{  color: $verde; }  } 
 header #nav-BigScreen ul li a i,
@@ -120,6 +122,7 @@ section#countdown .hexagonos-resp { display: none;  }
 
 }
 @media (max-width: 767px) { 
+    #filtroVideo {  display: none; }
     section#countdown .hexagonos { top: -70px !important; }
     section#countdown{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
      #myVideo{ display: none; }

@@ -17,6 +17,16 @@ ul li, p {
   overflow: hidden;
   height: 674px; }
 
+#filtroVideo {
+  background-color: rgba(48, 77, 169, 0.8);
+  background: rgba(48, 77, 169, 0.8);
+  color: rgba(48, 77, 169, 0.8);
+  position: absolute;
+  max-width: 300%;
+  margin: 0 auto;
+  min-width: 100%;
+  min-height: 84.5%; }
+
 #myVideo {
   max-width: 300%;
   z-index: -100;
@@ -99,7 +109,8 @@ header #dataEvt {
   bottom: 0;
   right: 0;
   color: #fff;
-  top: 23px; }
+  top: 23px;
+  z-index: +1; }
 
 header #nav-BigScreen ul li a,
 header #nav-responsive ul li a {
@@ -254,6 +265,8 @@ section#countdown .hexagonos-resp {
     z-index: +1; } }
 
 @media (max-width: 767px) {
+  #filtroVideo {
+    display: none; }
   section#countdown .hexagonos {
     top: -70px !important; }
   section#countdown h3 {
