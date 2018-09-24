@@ -97,7 +97,24 @@ header #dataEvt {
   top: 10px;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  color: #fff;
+  top: 23px; }
+
+header #nav-BigScreen ul li a,
+header #nav-responsive ul li a {
+  color: #fff;
+  font-family: "Bariol";
+  transition-duration: 0.3s; }
+  header #nav-BigScreen ul li a:hover,
+  header #nav-responsive ul li a:hover {
+    color: #bdd018; }
+
+header #nav-BigScreen ul li a i,
+header #nav-responsive ul li a i {
+  font-size: 16px;
+  position: relative;
+  top: -3px; }
 
 section#countdown {
   background: url("../img/bg-timer.jpg") center bottom no-repeat;
