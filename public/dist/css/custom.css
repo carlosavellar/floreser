@@ -89,7 +89,7 @@ section#video #arrow-see-more {
   font-size: 25px;
   transition-duration: 0.2s;
   border-radius: 1px;
-  z-index: 1999; }
+  z-index: 999; }
   section#video #arrow-see-more:link {
     color: #fff; }
   section#video #arrow-see-more:hover {
@@ -315,7 +315,7 @@ section#contato {
   z-index: 1000; }
 
 #video_modal {
-  max-width: 1200px !important; }
+  max-width: 1100px !important; }
 
 section#caronas h2 {
   font: 4.7em "Bariol"; }
