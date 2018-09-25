@@ -25,7 +25,8 @@ $fontNumberFamily768:  'Poppins', Arial, verdana, sans-serif, normal;
 $titFontFamyly768:     'Bariol'; 
 $titFontSize768:        3.8em;
 $fontBold768:           700;
-$ligghtWeight:          100;
+$ligghtWeight:          200;
+$lightWeight2:          100;
 
 // Paddings
 $sectionPadd:           7.5em;
@@ -52,24 +53,24 @@ $azulTitulosH2:       #3d51a0;
 $transition02s:       0.3s;
 
 h2{ @include textShadow; }
+header #dataEvt {  .date { position: absolute; top: 13px;  z-index: 100; font-family: $fontNumberFamily; font-weight: 100; } @include absoluteCenter;  color: $white;  }
 
 ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWeight; color: $white; letter-spacing: $letterSpacing; }
 #video_modal{ max-width: 700px !important; }
 #video{ background: #333; overflow: hidden; height: 674px; }
-#filtroVideo { @include bgTransparent; position: absolute;   max-width: 300%;  margin: 0 auto; min-width: 100%; min-height: 84.5%; } 
+#filtroVideo { @include bgTransparent; position: absolute;   max-width: 300%;  margin: 0 auto; min-width: 100%; height: 675px; } 
 #myVideo { max-width: 300%; z-index: -100; margin: 0 auto; min-width: 100%; min-height: 100%; }
 #myVideo-full{ width: 100%; }
 #btn-full-video{ button{ position: absolute; z-index: 999; top: 300px; width: 100%; } }
 section#video #logo{ position: absolute; margin: auto; position: absolute; top:81px; left: 0; bottom: 0; right: 0; margin-left: -100px span{ left: 50%; margin-left: -100px } }
 section#video #arrow-see-more { position: relative; top: 20px; font-size: 25px; transition-duration: 0.2s; border-radius: 1px; &:link { color: $white; } &:hover { position: relative; top: 30px; color: #999 !important; } z-index: 1999; }
-section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; padding: 7px 30px; z-index: 2000; } }
+section#video {  #playBtn2 { @include btnBorderRadius; @include dropShadow; padding: 7px 30px; z-index: 14999; } }
 
 #exampleModalCenter{ .modal-content{ background-color: none !important; background-color: transparent !important; } }
 
 .navbar-nav { width: 100%; text-align: center; > li { float: none; display: inline-block; } }
 
 header #nav-BigScreen{ ul{ margin: auto; position: absolute; top: 63px; left: 0; bottom: 0; right: 0; li{ z-index: 100;  height: 50px; } } }
-header #dataEvt { @include absoluteCenter; color: $white; top: 23px; z-index: +1; }
 header #nav-BigScreen ul li a,
 header #nav-responsive ul li a  { color: #fff; font-family: $titFontFamyly; transition-duration: $transition02s; &:hover{  color: $verde; }  } 
 header #nav-BigScreen ul li a i,
@@ -92,7 +93,8 @@ section#enxoval { h2{ font: $titFontSize $titFontFamyly; } ul li { list-style: n
  
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
-section#video #divplay { z-index: 11000 !important; }
+section#video #divplay { z-index: 11000 !important; #playBtn2 { z-index: 3000; } }
+section#video {  overflow: hidden !important; }
 section#caronas { height: 400px; h2 { color: $azulTitulosH2;  } p { color: $azulTitulosH2; } }
 section#contato { background-color: #3e51a0; }
   #nav-responsive{ display: none; z-index: 1000; }
@@ -153,7 +155,7 @@ section#countdown, section#sobrenos, section#enxoval, section#caronas, section#c
     #nav-BigScreen{ display: none; }
     section#countdown .hexagonos { top: -210px;  }
     section#countdown { #horas{ position: relative; left: 3%;} }
-    section#countdown { #numbers { div:nth-child(2){ border: 2px soldid red;  } div:nth-child(4){ position: relative; left: -10px;  } } }
+    section#countdown { #numbers { div:nth-child(4){ position: relative; left: -10px;  } } }
     section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd900 0; }
     section#sobrenos { background: url("../img/bg-sobre-nos-767.jpg") center bottom no-repeat; background-size: cover; }
     section#inscrevase { background: url("../img/bg-inscreva-se-767.jpg") center bottom no-repeat; background-size: cover; }
