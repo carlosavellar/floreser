@@ -14,8 +14,21 @@ header #dataEvt {
     position: absolute;
     top: 13px;
     z-index: 100;
-    font-family: "Poppins", Arial, verdana, sans-serif, normal;
-    font-weight: 100; }
+    font-family: 'Poppins', Arial, verdana, sans-serif, normal;
+    font-weight: 100 !important; }
+
+.modal #closeBot {
+  color: #fff; }
+  .modal #closeBot .modal-content {
+    border: 0 !important; }
+  .modal #closeBot .modal-body {
+    padding: 0 !important; }
+
+.modal-content {
+  border: 0 !important; }
+
+.modal-body {
+  padding: 0 !important; }
 
 ul li, p {
   line-height: 32px;

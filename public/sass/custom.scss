@@ -53,8 +53,21 @@ $azulTitulosH2:       #3d51a0;
 $transition02s:       0.3s;
 
 h2{ @include textShadow; }
-header #dataEvt {  .date { position: absolute; top: 13px;  z-index: 100; font-family: $fontNumberFamily; font-weight: 100; } @include absoluteCenter;  color: $white;  }
-
+header #dataEvt {  .date { position: absolute; top: 13px;  z-index: 100; font-family: 'Poppins', Arial, verdana, sans-serif, normal; font-weight: 100 !important; } @include absoluteCenter;  color: $white;  }
+.modal #closeBot { color: $white; 
+    .modal-content{
+        border: 0 !important;
+    }
+    .modal-body{
+        padding: 0 !important;
+    }
+}
+.modal-content{
+    border: 0 !important;
+}
+.modal-body{
+    padding: 0 !important;
+}
 ul li, p{ line-height: $lineHight; font-size: $textSize; font-weight: $ligghtWeight; color: $white; letter-spacing: $letterSpacing; }
 #video_modal{ max-width: 700px !important; }
 #video{ background: #333; overflow: hidden; height: 674px; }
