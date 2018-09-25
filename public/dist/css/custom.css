@@ -206,14 +206,51 @@ section#inscrevase #inscricaoBtn {
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
-  background-color: #96b33c;
-  border: 1px solid #97b43d;
-  font-size: 2em;
+  background-color: #070707;
+  border: none;
+  font-size: 1.6em;
   padding: 5px 35px;
-  margin-bottom: 30px;
-  transition-duration: 0.2s; }
+  transition-duration: 0.2s;
+  background-color: #4461b8; }
   section#inscrevase #inscricaoBtn:hover {
-    background-color: #809933; }
+    background-color: #2c4694; }
+
+section#inscrevase .pagSeguro {
+  margin: 30px auto; }
+
+section#inscrevase #pgtoBtn {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  background-color: #070707;
+  border: none;
+  font-size: 1.6em;
+  padding: 5px 35px;
+  transition-duration: 0.2s;
+  background-color: #809933; }
+  section#inscrevase #pgtoBtn:hover {
+    background-color: #627568; }
+
+section#inscrevase .card {
+  border-radius: 21px;
+  background-image: url("../img/bg-decarona.png");
+  overflow: hidden;
+  border: 3px solid #d9ccc1; }
+
+section#inscrevase .card-title {
+  background-image: url("../img/bg-decarona.png");
+  margin-bottom: 0;
+  padding: 15px;
+  color: #f0da11;
+  font-style: italic;
+  letter-spacing: 1.5px; }
+
+section#inscrevase .card-body {
+  padding: 0 0 0 0;
+  background-color: #eeefef; }
 
 section#enxoval {
   background: url("../img/bg-enxoval.jpg") center bottom no-repeat;
@@ -229,6 +266,23 @@ section#enxoval ul li {
 
 section#enxoval ul {
   padding-left: 0; }
+
+section#enxoval .card-body {
+  padding: 0 0 0 0; }
+
+section#enxoval .card {
+  border-radius: 21px;
+  overflow: hidden;
+  border: 3px solid #eeefef; }
+
+section#enxoval #figurino-btn {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #4461b8;
+  transition-duration: 0.2s; }
+  section#enxoval #figurino-btn:hover {
+    background-color: #2c4694; }
 
 section#sobrenos {
   background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat;

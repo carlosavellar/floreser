@@ -4,7 +4,7 @@
 @mixin absoluteCenterGeneral   { margin: auto; position: absolute; left: 0; bottom: 0; right: 0;}
 @mixin dropShadow { -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31); -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31); box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31);}
 @mixin btnBorderRadius {-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;}
-@mixin btnVerde { @include dropShadow; background-color: $verdeMedio; border: 1px solid $verdeMedio + 1; font-size: 2em; padding: 5px 35px; margin-bottom: 30px; }
+@mixin btnGeral { @include dropShadow; background-color: $verdeMedio; border: none; font-size: 1.6em; padding: 5px 35px; }
 @mixin textShadow { text-shadow: 1px 1px 5px rgba(150, 150, 150, 1) }
 @mixin opacity {  }
 @mixin bgTransparent {background-color: rgba(48, 77, 169, 0.8); background: rgba(48, 77, 169, 0.8); color: rgba(48, 77, 169, 0.8);}
@@ -44,13 +44,18 @@ $verdeEscuro:         #627568;
 $verdeAzul:           #45568b;
 $azul:                #3d41a0;
 
-$verdeMedio:          #96b33c;
+$azulEscuro:          #4461b8;
+$azulEscuroHover:     #2c4694;
+$verdeMedio:          #070707;
 $verdeMedioHover:     #809933;
 
 $azulTitulosH2:       #3d51a0;
 
+$bordRadiusCard:       21px;              
 // Transition
 $transition02s:       0.3s;
+
+$letter-spacing:      1.5px;
 
 h2{ @include textShadow; }
 header #dataEvt {  .date { position: absolute; top: 13px;  z-index: 100; font-family: 'Poppins', Arial, verdana, sans-serif, normal; font-weight: 100 !important; } @include absoluteCenter;  color: $white;  }
@@ -100,10 +105,17 @@ section#countdown  { h2 { color: #3d51a0; } }
 
 section#inscrevase { h2{ font: $titFontSize $titFontFamyly; color: $azul; } p{ color: $azul; }  }
 section#inscrevase { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
-section#inscrevase #inscricaoBtn { @include btnBorderRadius; @include btnVerde; transition-duration: 0.2s; &:hover { background-color: $verdeMedioHover; }  }
+section#inscrevase #inscricaoBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $azulEscuro; &:hover { background-color: $azulEscuroHover; }  }
+section#inscrevase .pagSeguro { margin: 30px auto; }
+section#inscrevase #pgtoBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $verdeMedioHover; &:hover { background-color: $verdeEscuro; }  }
+section#inscrevase .card { border-radius: $bordRadiusCard; background-image: url("../img/bg-decarona.png"); overflow: hidden; border: 3px solid #d9ccc1; }
+section#inscrevase .card-title {  background-image: url("../img/bg-decarona.png"); margin-bottom: 0; padding: 15px; color: #f0da11; font-style: italic; letter-spacing: $letter-spacing; }
+section#inscrevase  .card-body { padding: 0 0 0 0; background-color: #eeefef; }
 section#enxoval { background: url("../img/bg-enxoval.jpg") center bottom no-repeat; background-size: cover; color: $white; }
 section#enxoval { h2{ font: $titFontSize $titFontFamyly; } ul li { list-style: none; font-size: 16px; } ul { padding-left: 0;  } }
- 
+section#enxoval  .card-body { padding: 0 0 0 0;  }
+section#enxoval .card { border-radius: $bordRadiusCard; overflow: hidden; border: 3px solid #eeefef; }
+section#enxoval #figurino-btn { @include btnBorderRadius; background-color: $azulEscuro; transition-duration: 0.2s; &:hover { background-color: $azulEscuroHover; } }
 section#sobrenos { background: url("../img/bg-sobre-nos.jpg") center bottom no-repeat; background-size: cover; }
 section#sobrenos { h2{ font: $titFontSize $titFontFamyly; color: $white;} }
 section#video #divplay { z-index: 11000 !important; #playBtn2 { z-index: 3000; } }

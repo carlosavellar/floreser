@@ -52,3 +52,7 @@ document.addEventListener("scroll", () => {
 });
 
 // Easy Slide nav
+
+document.querySelector('#pgtoBtn').addEventListener('click', ()=>{
+    window.open('http://www.pagseguro.com.br','_blank');
+});
