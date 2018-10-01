@@ -253,6 +253,7 @@ section#inscrevase .card-body {
   background-color: #eeefef; }
 
 section#enxoval {
+  border-bottom: 10px solid #5f5d6f;
   background: url("../img/bg-enxoval.jpg") center bottom no-repeat;
   background-size: cover;
   color: #fff; }
@@ -387,7 +388,9 @@ section#countdown .hexagonos-resp {
   section#enxoval h2 {
     font-size: 3.8em !important; }
   section#sobrenos h2 {
-    font-size: 3.8em !important; } }
+    font-size: 3.8em !important; }
+  section#sobrenos section#sobrenos .desenho-coordenadores {
+    display: block; } }
 
 @media (min-width: 992px) {
   section#countdown #numbers div:nth-child(2) {
@@ -396,7 +399,9 @@ section#countdown .hexagonos-resp {
     position: relative;
     left: -10px; }
   section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase {
-    padding: 7.5em 0; } }
+    padding: 7.5em 0; }
+  section#sobrenos .desenho-coordenadores {
+    display: none; } }
 
 @media (max-width: 991px) {
   #nav-responsive {
@@ -421,6 +426,8 @@ section#countdown .hexagonos-resp {
     background-size: cover; } }
 
 @media (min-width: 1200px) {
+  section#sobrenos .desenho-coordenadores {
+    display: none; }
   section#countdown,
   section#sobrenos,
   section#enxoval,

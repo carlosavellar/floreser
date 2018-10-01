@@ -10,8 +10,8 @@ const updateClock = () => {
     let now = new Date().getTime();
     distance = countDate - now;
     // let numMes = new Date().getMonth();
-    console.log(numMes - 6);
     let numMes = Math.floor();
+    // console.log(numMes - 6);
     let numDias = Math.floor(distance / (1000 * 60 * 60 * 24));
     let numHoras = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let numMin = Math.floor((distance % (1000 * 60 * 60)) / ((1000 * 60)));
@@ -34,6 +34,17 @@ const btnPlay = document.getElementById("playBtn2");
 const fullVideo = document.getElementById("myVideo-full");
 const myVideo = document.getElementById("myVideo");
 const btnClose = document.getElementById("closeBot");
+const modalVideo = document.getElementById("exampleModalCenter");
+
+document.addEventListener('click', el=>{
+    if(el.target === modalVideo){
+        console.log(`no target ${el}`);
+        fullVideo.pause();
+    }else if(!modalVideo === "clicked"){
+        console.log('Fora dele');
+    }
+});
+
 btnPlay.addEventListener('click', () => {
     myVideo.pause();
 });
@@ -42,17 +53,26 @@ document.getElementById("closeBot").addEventListener('click', () => {
 
 });
 fullVideo.controls = true;
+fullVideo.pause();
 document.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
-        console.log("Maior que 100");
+        // console.log("Maior que 100");
         myVideo.pause();
     } else {
         myVideo.play();
     }
 });
-
-// Easy Slide nav
-
-document.querySelector('#pgtoBtn').addEventListener('click', ()=>{
-    window.open('http://www.pagseguro.com.br','_blank');
+fullVideo.loop = false;
+fullVideo.muted = false;
+closeBot.addEventListener('click', ()=>{ 
+    fullVideo.pause();
 });
+
+if(!modalVideo.classList.contains(".show")){
+    // console.log('Show false');
+    fullVideo.pause();
+}else{
+    
+    // console.log('Show true');
+}
+

@@ -186,17 +186,17 @@
         </div> -->
       </div>
 
-    </div>
+    </div>z
   </section>
   <section id="sobrenos">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <!-- <p class="text-center"><img src="dist/img/team.png"></p> -->
+          <p class="text-center hidden-md-up desenho-coordenadores img-fluid"><img src="dist/img/coordenadores.png"></p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6">
           <h2>Sobre nós</h2>
-          <p>Queridas <strong>flores</strong> e prezados <strong>seres</strong>, nós <strong>orquidiamente</strong> convidamos a todos, seja <strong>cravo</strong> ou <strong>rosa</strong>, <strong>lírio</strong> ou <strong>margarida</strong> da 3 regiāo a participar do Encontro de Jovens Flor e Ser. Venham conosco <strong>primaverar</strong> nós mesmos nesse <strong>jardim</strong> de auto-conhecimento <strong>regado</strong> de amor que vem ocorrer nos dias 2, 3, 4 e 5 de março. Pedimos somente que venham com os corações <strong>tulipados</strong> de alegria. Carinhosamente,</p>
+          <p>Queridas <strong>flores</strong> e prezados <strong>seres</strong>, nós <strong>orquidiamente</strong> convidamos a todos, seja <strong>cravo</strong> ou <strong>rosa</strong>, <strong>lírio</strong> ou <strong>margarida</strong> da 3 regiāo a participar do Encontro de Jovens Flor e Ser. Venham conosco <strong>primaverar</strong> nós mesmos nesse <strong>jardim</strong> de auto-conhecimento <strong>regado</strong> de amor que vem ocorrer nos dias 2, 3, 4 e 5 de março. Pedimos somente que venham com os corações <strong>tulipados</strong> de alegria. Carinhosamente, Núcleo Divino Manto.</p>
 
         </div>
       </div>
@@ -207,10 +207,21 @@
       <div class="row">
         <div class="col-sm-12 col-md-8 col-lg-8">
           <h2 class="">Inscreva-se</h2>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit libero.</p>
+          <p class="">Clique em Inscreva-se, e após realizar o cadastro faça o pagamento<br>clicando no botão PagSeguro.</p>
           <button id="inscricaoBtn" class="typeform-share button btn btn-primary" href="https://gabriel983.typeform.com/to/KddE7h" data-mode="popup" style="display:inline-block;text-decoration:none;cursor:pointer;text-align:center;margin:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Inscreva-se </button> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-          <button id="pgtoBtn" href="https://pagseguro.uol.com.br/" target="_blank" class="btn btn-primary">fazer pagamento</button>
-          <div class="pagSeguro"><img src="dist/img/pagSeguro.png"></div>
+          <!-- <button id="pgtoBtn" href="https://pagseguro.uol.com.br/" target="_blank" class="btn btn-primary">fazer pagamento</button> -->
+          <br><br><br>
+          <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <div for="exampleInputEmail1">Realizar pagamento:</div>
+            <input type="hidden" name="code" value="78927A55ACACDD044483BF80195542D0" />
+            <input type="hidden" name="iot" value="button" />
+            
+            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+            </form>
+            <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+          <!-- <div class="pagSeguro"><img src="dist/img/pagSeguro.png"></div> -->
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="card" style="">
@@ -323,7 +334,7 @@
       </div>
 
   </section>
-  <section id="caronas">
+  <!-- <section id="caronas">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-9 col-lg-9">
@@ -338,7 +349,7 @@
        
       </div>
       <div>
-  </section>
+  </section> -->
   <section id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.751698680691!2d-46.87464848501909!3d-23.720559484604088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfada4986a451b%3A0x5c3dd0466e160477!2sEstr.+da+Represinha%2C+662+-+Engenho%2C+Itapecerica+da+Serra+-+SP!5e0!3m2!1spt-BR!2sbr!4v1536603325364"
       width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
