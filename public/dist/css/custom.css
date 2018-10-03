@@ -328,6 +328,19 @@ section#caronas {
 section#countdown .hexagonos-resp {
   display: none; }
 
+section#contato #whatspp {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+
+section#contato ul.nav li {
+  float: left;
+  display: inline; }
+
+section#contato ul.nav li:nth-child(2) {
+  padding-left: 20px;
+  padding-top: 6px !important; }
+
 @media (max-width: 575px) {
   section#countdown .hexagonos {
     display: none; }

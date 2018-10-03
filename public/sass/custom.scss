@@ -135,7 +135,7 @@ section#contato { background-color: #3e51a0; }
 
 
 section#countdown .hexagonos-resp { display: none;  }
-
+section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left; display: inline; } ul.nav li:nth-child(2){ padding-left: 20px; padding-top: 6px !important; } }
 
 
 @media (min-width: 576px) { 
