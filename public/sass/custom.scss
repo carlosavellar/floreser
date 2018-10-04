@@ -94,14 +94,14 @@ header #nav-responsive ul li a  { color: #fff; font-family: $titFontFamyly; tran
 header #nav-BigScreen ul li a i,
 header #nav-responsive ul li a i {font-size: 16px; position: relative; top: -3px; } 
 
-section#countdown { background: url("../img/bg-timer.jpg") center bottom no-repeat; background-size: cover; }
-section#countdown{ h3 { font:900 $fontNumber $fontNumberFamily; } p { font: $fontNumberFamily !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly; }}
-section#countdown .hexagonos { @include absoluteCenterGeneral;  }
-section#countdown #numbers { div:nth-child(1){ color: $verde; p{ color: $verde; } @include opacity } }
-section#countdown #numbers { div:nth-child(2){ color: $verdeEscuro; p{ color: $verdeEscuro } @include opacity } }
-section#countdown  #numbers { div:nth-child(3){ color: $verdeAzul; p{ color: $verdeAzul } @include opacity } }
-section#countdown  #numbers { div:nth-child(4){ color: $azul; p{ color: $azul } @include opacity } }
-section#countdown  { h2 { color: #3d51a0; } }
+section#participe { background: url("../img/bg-timer.jpg") center bottom no-repeat; background-size: cover; }
+section#participe{ h3 { font:900 $fontNumber $fontNumberFamily; } p { font: $fontNumberFamily !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly; }}
+section#participe .hexagonos { @include absoluteCenterGeneral;  }
+section#participe #numbers { div:nth-child(1){ color: $verde; p{ color: $verde; } @include opacity } }
+section#participe #numbers { div:nth-child(2){ color: $verdeEscuro; p{ color: $verdeEscuro } @include opacity } }
+section#participe  #numbers { div:nth-child(3){ color: $verdeAzul; p{ color: $verdeAzul } @include opacity } }
+section#participe  #numbers { div:nth-child(4){ color: $azul; p{ color: $azul } @include opacity } }
+section#participe  { h2 { color: #3d51a0; } }
 
 section#inscrevase { h2{ font: $titFontSize $titFontFamyly; color: $azul; } p{ color: $azul; }  }
 section#inscrevase { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
@@ -134,8 +134,9 @@ section#contato { background-color: #3e51a0; }
 // Small devices (landscape phones, 576px and up)
 
 
-section#countdown .hexagonos-resp { display: none;  }
-section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left; display: inline; } ul.nav li:nth-child(2){ padding-left: 20px; padding-top: 6px !important; } }
+section#participe .hexagonos-resp { display: none;  }
+section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left; display: inline; margin-right: 20px; } ul.nav li:nth-child(3){ padding-left: 20px; padding-top: 6px !important; } }
+section#contato { #whatspp-elo{ @include btnBorderRadius; } ul.nav li { float: left; display: inline; } }
 
 
 @media (min-width: 576px) { 
@@ -143,8 +144,8 @@ section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left;
  
 }
 @media (max-width: 575px) { 
-    section#countdown .hexagonos { display: none;  }
-    section#countdown .hexagonos-resp { display: block; @include absoluteCenterGeneral; top: -101px; z-index: +1; }
+    section#participe .hexagonos { display: none;  }
+    section#participe .hexagonos-resp { display: block; @include absoluteCenterGeneral; top: -101px; z-index: +1; }
     // section#sobrenos .desenho-coordenadores { display: block; }
 }
 // Medium devices (tablets, 768px and up)
@@ -153,17 +154,17 @@ section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left;
 }
 @media (max-width: 767px) { 
     #filtroVideo {  display: none; }
-    section#countdown .hexagonos { top: -70px !important; }
-    section#countdown{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
+    section#participe .hexagonos { top: -70px !important; }
+    section#participe{ h3 { font:900 $fontNumber768 $fontNumberFamily768; } p { font: $fontNumberFamily768 !important; font-weight: $fontBold;  } h2{ font: $titFontSize $titFontFamyly768; }}
      #myVideo{ display: none; }
      #video {  height: 550px; background-color: $blue; background: url("../img/bg-resp.jpg"); background-position: center top; }
-     section#countdown .hexagonos { top: -10px;  }
+     section#participe .hexagonos { top: -10px;  }
      .ico { display: none; }
      #numbers { text-align: left; p { font-size: 15px;  position: relative; top: -18px; } }
    
-     section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd767 0 !important; }
-     section#countdown #numbers div:nth-child(4) { left: 0 !important; }
-     section#countdown{ h2 { font-size: $titFontSize768 !important; } }
+     section#participe, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd767 0 !important; }
+     section#participe #numbers div:nth-child(4) { left: 0 !important; }
+     section#participe{ h2 { font-size: $titFontSize768 !important; } }
      section#inscrevase { h2 { font-size: $titFontSize768 !important; }  }
      section#caronas { h2 { font-size: $titFontSize768 !important; color: $azulTitulosH2 } p { color: $azulTitulosH2 }   }
      section#inscrevase { h2 { font-size: $titFontSize768 !important; } }
@@ -176,17 +177,17 @@ section#contato { #whatspp{ @include btnBorderRadius; } ul.nav li { float: left;
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-section#countdown { #numbers { div:nth-child(2){ padding-left: 45px !important; } div:nth-child(4){ position: relative; left: -10px;  } } }    
-section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd900 0; }
+section#participe { #numbers { div:nth-child(2){ padding-left: 45px !important; } div:nth-child(4){ position: relative; left: -10px;  } } }    
+section#participe, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd900 0; }
 section#sobrenos .desenho-coordenadores { display: none; }
 }
 @media (max-width: 991px) { 
     #nav-responsive{ display: block; }
     #nav-BigScreen{ display: none; }
-    section#countdown .hexagonos { top: -210px;  }
-    section#countdown { #horas{ position: relative; left: 3%;} }
-    section#countdown { #numbers { div:nth-child(4){ position: relative; left: -10px;  } } }
-    section#countdown, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd900 0; }
+    section#participe .hexagonos { top: -210px;  }
+    section#participe { #horas{ position: relative; left: 3%;} }
+    section#participe { #numbers { div:nth-child(4){ position: relative; left: -10px;  } } }
+    section#participe, section#sobrenos, section#enxoval, section#caronas, section#contato, section#inscrevase { padding: $sectionPadd900 0; }
     section#sobrenos { background: url("../img/bg-sobre-nos-767.jpg") center bottom no-repeat; background-size: cover; }
     section#inscrevase { background: url("../img/bg-inscreva-se-767.jpg") center bottom no-repeat; background-size: cover; }
 
@@ -194,7 +195,7 @@ section#sobrenos .desenho-coordenadores { display: none; }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     section#sobrenos .desenho-coordenadores { display: none; }
-    section#countdown,
+    section#participe,
     section#sobrenos,
     section#enxoval,
     section#contato,
@@ -205,7 +206,7 @@ section#sobrenos .desenho-coordenadores { display: none; }
         padding: 0 $sectionPadd;
     }
 
-    section#countdown {
+    section#participe {
         #numbers {
             div:nth-child(2) {
                 padding-left: 45px !important;
@@ -219,7 +220,7 @@ section#sobrenos .desenho-coordenadores { display: none; }
         }
     }
 
-    section#countdown .hexagonos {
+    section#participe .hexagonos {
         top: -210px;
     }
 }
