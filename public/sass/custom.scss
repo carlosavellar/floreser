@@ -108,7 +108,7 @@ section#participe  { h2 { color: #3d51a0; } }
 section#inscrevase { p.fichamedica { color: $verdeMedioHover; } p#pagSeguro { color: $verdePagSeguro; } h2{ font: $titFontSize $titFontFamyly; color: $azul; } p{ color: $azul; }  }
 section#inscrevase { background: url("../img/bg-inscreva-se.jpg") center bottom no-repeat; background-size: cover; }
 section#inscrevase #inscricaoBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $azulEscuro; &:hover { background-color: $azulEscuroHover; }  }
-section#inscrevase #fichatecnicaBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $verdeMedioHover; &:hover { background-color: $azulEscuroHover; }  }
+section#inscrevase #fichatecnicaBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $verdeMedioHover; &:hover { background-color: $verdeEscuro; }  }
 section#inscrevase .pagSeguro { margin: 30px auto; }
 section#inscrevase #pgtoBtn { @include btnBorderRadius;  @include btnGeral; transition-duration: 0.2s; background-color: $verdeMedioHover; &:hover { background-color: $verdeEscuro; }  }
 section#inscrevase .card { border-radius: $bordRadiusCard; background-image: url("../img/bg-decarona.png"); overflow: hidden; border: 3px solid #d9ccc1; }
