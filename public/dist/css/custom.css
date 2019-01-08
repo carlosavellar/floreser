@@ -188,6 +188,12 @@ section#participe #numbers div:nth-child(4) {
 section#participe h2 {
   color: #3d51a0; }
 
+section#inscrevase p.fichamedica {
+  color: #809933; }
+
+section#inscrevase p#pagSeguro {
+  color: #22ae30; }
+
 section#inscrevase h2 {
   font: 4.7em "Bariol";
   color: #3d41a0; }
@@ -213,6 +219,22 @@ section#inscrevase #inscricaoBtn {
   transition-duration: 0.2s;
   background-color: #4461b8; }
   section#inscrevase #inscricaoBtn:hover {
+    background-color: #2c4694; }
+
+section#inscrevase #fichatecnicaBtn {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
+  background-color: #070707;
+  border: none;
+  font-size: 1.6em;
+  padding: 5px 35px;
+  transition-duration: 0.2s;
+  background-color: #809933; }
+  section#inscrevase #fichatecnicaBtn:hover {
     background-color: #2c4694; }
 
 section#inscrevase .pagSeguro {
