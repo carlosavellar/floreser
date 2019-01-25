@@ -9,9 +9,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./dist/util/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="./dist/css/custom.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800" rel="stylesheet">
-
+  <link rel="stylesheet" href="./dist/css/util/baguetteBox.min.css" />
+  <link rel="stylesheet" href="./dist/css/custom.css">
 </head>
 
 <body>
@@ -333,10 +333,22 @@
         <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="card" style="">
             <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-            <div class="card-body">
+            <div class="card-body tz-gallery">
               <!-- <h5 class="card-title">Card titlewww</h5> -->
               <p class="card-text"><img class="img-fluid" src="./dist/img/celta.jpg"></p>
-              <p class="text-center"><button href="#" id="figurino-btn" class="btn btn-primary text-center center"><img src="./dist/img/trimurdi.png"> Figurino Celta</button></p>
+              <p class="text-center">
+                
+                
+                <a id="figurino-btn"  class="btn btn-primary text-center center lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                  <img src="./dist/img/trimurdi.png"> 
+                  Figurino Celta
+                </a>
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg"></a>
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg"></a>
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg"></a>
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg"></a>
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg"></a>
+              </p>
             </div>
           </div>
         </div>
@@ -381,28 +393,31 @@
       
       </div>
       <div></div>
+
+      
   </section>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
  
-  <script src="./dist/js/app.js"></script>
-  <script src="./dist/util/nav/slideNav.js"></script>
-  <script>
+  
+  <!-- <script>
     window.slide = new SlideNav({
-  changeHash: true    
+      changeHash: true    
     });
-  </script>
-  <script src="./dist/util/jquery/jquery-3.3.1.slim.min.js"></script>
+  </script> -->
+  <script src="./dist/util/jquery/jquery.min.js"></script>
   <script src="./dist/util/bootstrap/popper.min.js"></script>
   <script src="./dist/util/bootstrap/bootstrap.js"></script>
   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
   <script src="./dist/util/bootstrap/holder.min.js"></script>
-
-
-
+  <script src="./dist/util/gallery/baguetteBox.min.js"></script>
+  <script src="./dist/js/app.js"></script>
   <!-- Modal video -->
-
+  <script>
+    baguetteBox.run('.tz-gallery');
+    </script>
+  <!-- <script src="./dist/util/nav/slideNav.js"></script> -->
 
 </body>
 

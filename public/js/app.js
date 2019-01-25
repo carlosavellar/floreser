@@ -85,4 +85,44 @@
     btnWhatsElo.addEventListener('click', () => {
         window.open('https://api.whatsapp.com/send?1=pt_BR&phone=55011969200733');
     });
+
+    const hideCollapsedMenu = (item) => {
+        const newItem = item.target.parentNode.parentNode.parentNode.id;
+        console.log(item.target.parentNode.parentNode.parentNode.id);
+        document.querySelector(`#${newItem}`).classList.toggle("show");
+    };  
+
+    document.querySelector(".nav-link").addEventListener("click", hideCollapsedMenu);
 }
+
+
+
+// Easy Scroll
+$(document).ready(function() {
+    $('a[href*=\\#]').bind('click', function(e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+            }, 600, function() {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
+    });
+});
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Assign active class to nav links while scolling
+    $('.page-section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('.navigation a.active').removeClass('active');
+                    $('.navigation a').eq(i).addClass('active');
+            }
+    });
+}).scroll();
