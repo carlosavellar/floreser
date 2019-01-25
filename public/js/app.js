@@ -86,13 +86,15 @@
         window.open('https://api.whatsapp.com/send?1=pt_BR&phone=55011969200733');
     });
 
-    const hideCollapsedMenu = (item) => {
-        const newItem = item.target.parentNode.parentNode.parentNode.id;
-        console.log(item.target.parentNode.parentNode.parentNode.id);
-        document.querySelector(`#${newItem}`).classList.toggle("show");
+    const hideCollapsedMenu = () => {
+        if(window.scrollY > 10){
+            document.querySelector("#navbarColor01").classList.remove("show");
+        }
     };  
 
-    document.querySelector(".nav-link").addEventListener("click", hideCollapsedMenu);
+    window.addEventListener("scroll", hideCollapsedMenu);
+
+    // const larry = document.querySelectorAll(".");
 }
 
 
